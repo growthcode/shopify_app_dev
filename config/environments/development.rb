@@ -7,11 +7,11 @@ Rails.application.configure do
   # using Shopify's Scripttags manager
   # (configured in /config/initializers/shopify_app.rb)
   # and also by ApplicationController
-  config.public_url = 'PUT NGROK URL HERE';
-  
+  config.public_url = ENV['SHOP'];
+
   # shopify app creds
-  config.shopify_api_key = "PUT API KEY HERE"
-  config.shopify_secret = "PUT SECRET HERE"
+  config.shopify_api_key = ENV['SHOPIFY_API_KEY']
+  config.shopify_secret = ENV['SHOPIFY_SHARED_SECRET']
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development

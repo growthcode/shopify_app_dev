@@ -10,3 +10,5 @@ doc/
 test/tmp/*
 .idea
 tmp/
+config/secrets.yml
+.env
